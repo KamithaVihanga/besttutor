@@ -1,0 +1,38 @@
+///*---------- general ----------*/
+//body {
+//  background: #ff7070;
+//  color: #F3FCF0;
+//  font-family: sans-serif;
+//  //text-align: center;
+//}
+//h1 {
+//  font-family: 'Raleway', sans-serif;
+//  text-shadow: 2px 2px 0 #bdbdbd;
+//  text-transform: uppercase;
+//}
+
+/*---------- star rating ----------*/
+%flex-display {
+  display: flex;
+}
+.star-rating {
+  @extend %flex-display;
+  align-items: center;
+  font-size: 3em;
+  justify-content: center;
+  //margin-top: 50px;
+}
+.back-stars {
+  @extend %flex-display;
+  color: #616161;
+  position: relative;
+  text-shadow: 4px 4px 10px #616161;
+}
+.front-stars {
+  @extend %flex-display;
+  color: #EB6E00;
+  overflow: hidden;
+  position: absolute;
+  text-shadow: 2px 2px 5px #EB6E00;
+  top: 0;
+}
