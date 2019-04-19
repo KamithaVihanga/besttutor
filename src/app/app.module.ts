@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
 import { FindComponent } from './find/find.component';
 import { AdminComponent } from './admin/admin.component';
+import { RateComponent } from './rate/rate.component';
 
 const routes: Routes = [{
   path:'',
@@ -29,6 +30,10 @@ const routes: Routes = [{
   {
     path:"find",
     component: FindComponent
+  },
+  {
+    path:"rate",
+    component: RateComponent
   }];
 @NgModule({
   declarations: [
@@ -39,7 +44,8 @@ const routes: Routes = [{
     FooterComponent,
     NavComponent,
     FindComponent,
-    AdminComponent
+    AdminComponent,
+    RateComponent
   ],
   imports: [
     BrowserModule,
