@@ -13,6 +13,7 @@ import {FindComponent} from './find/find.component';
 import {AdminComponent} from './admin/admin.component';
 import {RateComponent} from './rate/rate.component';
 import {ResultsComponent} from './results/results.component';
+import { TutorDetailsComponent } from './tutor-details/tutor-details.component';
 
 const routes: Routes = [{
   path: '',
@@ -27,18 +28,19 @@ const routes: Routes = [{
 }, {
   path: "sign-up",
   component: SignUpComponent
-},
-  {
+}, {
     path: "find",
     component: FindComponent
-  },
-  {
+  }, {
     path: "rate",
     component: RateComponent
   }, {
     path: "results",
     component: ResultsComponent
-  }];
+  },{
+  path:"tutor-details",
+  component:TutorDetailsComponent
+}];
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ const routes: Routes = [{
     FindComponent,
     AdminComponent,
     RateComponent,
-    ResultsComponent
+    ResultsComponent,
+    TutorDetailsComponent
   ],
   imports: [
     BrowserModule,
