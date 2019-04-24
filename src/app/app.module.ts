@@ -1,40 +1,45 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {SignInComponent} from './sign-in/sign-in.component';
 import {RouterModule, Routes} from "@angular/router";
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { MainComponent } from './main/main.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavComponent } from './nav/nav.component';
-import { FindComponent } from './find/find.component';
-import { AdminComponent } from './admin/admin.component';
-import { RateComponent } from './rate/rate.component';
+import {SignUpComponent} from './sign-up/sign-up.component';
+import {MainComponent} from './main/main.component';
+import {FooterComponent} from './footer/footer.component';
+import {NavComponent} from './nav/nav.component';
+import {FindComponent} from './find/find.component';
+import {AdminComponent} from './admin/admin.component';
+import {RateComponent} from './rate/rate.component';
+import {ResultsComponent} from './results/results.component';
 
 const routes: Routes = [{
-  path:'',
-  redirectTo:'/main',
-  pathMatch:'full'
-},{
-  path:"main",
+  path: '',
+  redirectTo: '/main',
+  pathMatch: 'full'
+}, {
+  path: "main",
   component: MainComponent
-},{
-  path:"sign-in",
+}, {
+  path: "sign-in",
   component: SignInComponent
-},{
-  path:"sign-up",
-  component:SignUpComponent
+}, {
+  path: "sign-up",
+  component: SignUpComponent
 },
   {
-    path:"find",
+    path: "find",
     component: FindComponent
   },
   {
-    path:"rate",
+    path: "rate",
     component: RateComponent
+  }, {
+    path: "results",
+    component: ResultsComponent
   }];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +50,8 @@ const routes: Routes = [{
     NavComponent,
     FindComponent,
     AdminComponent,
-    RateComponent
+    RateComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -55,4 +61,5 @@ const routes: Routes = [{
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
