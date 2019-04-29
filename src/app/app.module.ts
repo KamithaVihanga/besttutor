@@ -16,6 +16,7 @@ import {ResultsComponent} from './results/results.component';
 import {TutorDetailsComponent} from './tutor-details/tutor-details.component';
 import {ForumComponent} from './forum/forum.component';
 import {ForumSideNavComponent} from './forum-side-nav/forum-side-nav.component';
+import { ThreadComponent } from './thread/thread.component';
 
 const routes: Routes = [{
   path: '',
@@ -61,7 +62,8 @@ const routes: Routes = [{
     ResultsComponent,
     TutorDetailsComponent,
     ForumComponent,
-    ForumSideNavComponent
+    ForumSideNavComponent,
+    ThreadComponent
   ],
   imports: [
     BrowserModule,
