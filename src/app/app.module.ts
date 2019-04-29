@@ -13,7 +13,9 @@ import {FindComponent} from './find/find.component';
 import {AdminComponent} from './admin/admin.component';
 import {RateComponent} from './rate/rate.component';
 import {ResultsComponent} from './results/results.component';
-import { TutorDetailsComponent } from './tutor-details/tutor-details.component';
+import {TutorDetailsComponent} from './tutor-details/tutor-details.component';
+import {ForumComponent} from './forum/forum.component';
+import {ForumSideNavComponent} from './forum-side-nav/forum-side-nav.component';
 
 const routes: Routes = [{
   path: '',
@@ -29,17 +31,20 @@ const routes: Routes = [{
   path: "sign-up",
   component: SignUpComponent
 }, {
-    path: "find",
-    component: FindComponent
-  }, {
-    path: "rate",
-    component: RateComponent
-  }, {
-    path: "results",
-    component: ResultsComponent
-  },{
-  path:"tutor-details",
-  component:TutorDetailsComponent
+  path: "find",
+  component: FindComponent
+}, {
+  path: "rate",
+  component: RateComponent
+}, {
+  path: "results",
+  component: ResultsComponent
+}, {
+  path: "tutor-details",
+  component: TutorDetailsComponent
+}, {
+  path: "forum",
+  component: ForumComponent
 }];
 
 @NgModule({
@@ -54,7 +59,9 @@ const routes: Routes = [{
     AdminComponent,
     RateComponent,
     ResultsComponent,
-    TutorDetailsComponent
+    TutorDetailsComponent,
+    ForumComponent,
+    ForumSideNavComponent
   ],
   imports: [
     BrowserModule,
